@@ -23,8 +23,6 @@
 
 2. 安装Node 8.X （建议安装nvm、avn，以便自动切换Node版本）
 
-   > 建议安装nvm、van，自动切换Node版本
-   >
    > https://github.com/creationix/nvm
    > https://github.com/wbyoung/avn
 
