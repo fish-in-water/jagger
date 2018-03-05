@@ -18,7 +18,8 @@ module.exports = {
   browserSync: {
     port: 3000,
     reloadDelay: 300,
-    notify: false
+    notify: false,
+    domain: ''
   },
   ...{
     // dev

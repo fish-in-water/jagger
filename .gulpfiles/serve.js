@@ -28,8 +28,12 @@ gulp.task('serve', ['clean:tmp', 'nodemon'], () => {
     reloadDelay: config.browserSync.reloadDelay,
     open: false,
     notify: config.browserSync.notify,
+    //https: false,config.browserSync.https,
+    scriptPath: config.browserSync.domain && function (path) {
+      return `//${config.browserSync.domain}` + path;
+    } ,
     socket: {
-      clientPath: '/browser-sync'
+      domain: config.browserSync.domain
     }
   });
 });

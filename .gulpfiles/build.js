@@ -46,9 +46,9 @@ gulp.task('compile', async () => {
       // compile
       const entryfiles = [];
       for (const file of files) {
-        const qs = asset.link.parse(file);
+        const {__compile: compile, __library: library} = asset.link.parse(file);
         const pathname = url.parse(file).pathname;
-        if (qs['__compile'] === 'false') {
+        if (compile === 'false') {
           const abspath = rel2abs(pathname);
           // build extra css link files
           if (ext == 'css') {
@@ -75,7 +75,8 @@ gulp.task('compile', async () => {
               target: 'node',
               extract: {
                 ext: 'css'
-              }
+              },
+              library
             });
             writefile(absdest(pathname), content);
 
@@ -86,12 +87,14 @@ gulp.task('compile', async () => {
               referer: route,
               extract: {
                 ext: 'css'
-              }
+              },
+              library
             });
           } else {
             return await loader.compile({
               pathname,
-              referer: route
+              referer: route,
+              library
             });
           }
         })();
