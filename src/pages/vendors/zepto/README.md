@@ -1,0 +1,3 @@
+如果直接使用Webpack导出Zepto，页面报错
+另外Zepto在部分机型下，发起Ajax请求出现兼容性问题
+故采用customization版本，请勿使用bower，npm安装Zepto

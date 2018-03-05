@@ -1,0 +1,21 @@
+{
+  "name": "jagger",
+  "description": "a modern front-end bone",
+  "main": "app.js",
+  "authors": [
+    "xuxia"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/pages/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "frozenui": "*"
+  }
+}

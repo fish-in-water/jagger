@@ -1,0 +1,37 @@
+{
+  "name": "frozenui",
+  "description": "FrozenUI的CSS组件库,基于腾讯手Q样式规范",
+  "main": [
+    "./dist/js/frozen.js",
+    "./dist/css/frozen-min.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "keywords": [
+    "frozenui",
+    "frozen",
+    "ui",
+    "mobile",
+    "qq",
+    "腾讯",
+    "手Q"
+  ],
+  "authors": [
+    "fayching <435462399@163.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://frozenui.github.io/",
+  "_release": "eadd9bd959",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "eadd9bd95980e7ca0ac095dad071b6e3ed422832"
+  },
+  "_source": "https://github.com/frozenui/frozenui.git",
+  "_target": "*",
+  "_originalSource": "frozenui",
+  "_direct": true
+}

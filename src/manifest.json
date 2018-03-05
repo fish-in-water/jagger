@@ -1,0 +1,83 @@
+{
+  "pages": {
+    "/samples/hello-world": {
+      "html": "/pages/views/samples/hello-world/hello-world.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/views/samples/hello-world/hello-world.pcss"
+      ],
+      "js": [
+        "/pages/views/samples/hello-world/__jquery.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/hello-world/hello-world.js"
+      ]
+    },
+    "/samples/reference": {
+      "html": "/pages/views/samples/reference/reference.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/views/samples/reference/reference.pcss"
+      ],
+      "js": [
+        "/pages/views/samples/reference/__jquery.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/reference/reference.js"
+      ]
+    },
+    "/samples/lazy-load": {
+      "html": "/pages/views/samples/lazy-load/lazy-load.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/views/samples/lazy-load/lazy-load.pcss"
+      ],
+      "js": [
+        "/pages/views/samples/lazy-load/__jquery.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/lazy-load/lazy-load.js"
+      ]
+    },
+    "/samples/vue-ssr-app*": {
+      "html": "/pages/views/samples/vue-ssr-app/app.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/vendors/frozenui/dist/css/frozen.css?__chunk=vendor&__cache=true&__compile=false",
+        "/pages/views/samples/vue-ssr-app/app.pcss"
+      ],
+      "js": [
+        "/pages/vendors/zepto/zepto.js?__chunk=vendor&__cache=true&__compile=false",
+        "/pages/components/tap.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__vue.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__vue-router.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__vue-navigation.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__vuex.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__axios.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/__base-64.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/vue-ssr-app/app.js"
+      ]
+    },
+    "/samples/calculator": {
+      "html": "/pages/views/samples/calculator/calculator.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/views/samples/calculator/calculator.pcss"
+      ],
+      "js": [
+        "/pages/views/samples/calculator/__jquery.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/calculator/calculator.js"
+      ]
+    },
+    "/samples/mirage": {
+      "html": "/pages/views/samples/mirage/mirage.swig",
+      "css": [
+        "/pages/components/reset.pcss?__chunk=vendor&__cache=true",
+        "/pages/views/samples/mirage/mirage.pcss"
+      ],
+      "js": [
+        "/pages/vendors/zepto/zepto.js?__chunk=vendor&__cache=true&__compile=false",
+        "/pages/components/cache.js?__chunk=vendor&__cache=true",
+        "/pages/views/samples/mirage/mirage.js"
+      ]
+    }
+  },
+  "externals": {
+    "Zepto": "Zepto"
+  }
+}
