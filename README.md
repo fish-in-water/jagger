@@ -240,7 +240,7 @@ config
 | baseUrl     | baseUrl: process.env.BASE_URL \|\| '/jagger' | 取值 BASE_URL环境变量，打包、运行中取该环境变量确定baseUrl信息，达到灵活部署项目，例如配置为/my-project, 路由变为 http://localhost:3000/my-project/samples/hello-world |
 | cdnUrl      | cdnUrl: process.env.CDN_URL \|\| '/jagger', | 取值CDN_URL环境变量，打包、运行中取该环境变量确定cdnUrl，达到灵活配置CDN路径的目的，例如配置为//cdn.gfzq.cn/jagger/develop，则图片等静态资源路径变更为//cdn.gfzq.cn/jagger/develop/views/hello-world/logo.jpg |
 | assets      | assets: /\.(png\|jpe?g\|gif\|svg\|pdf\|ico)(\?.*)?$/i, | 静态资源尾缀，配置需要识别的静态文件，如匹配，则做MD5 Hash转换，并替换链接中的地址 |
-| browserSync | {port: 3000,reloadDelay: 300,notify: false} | 开发模式下启用，port：Live Reload代理端口；reloadDelay：刷新delay；notify：是否提示刷新 |
+| browserSync | {port: 3000,reloadDelay: 300,notify: false, domain: ''} | 开发模式下启用，port：Live Reload代理端口；reloadDelay：刷新delay；notify：是否提示刷新；domain: 设置browserSync链接域名 |
 | logger      | {level: 'debug',maxsize: 100 * 1024 * 1024} | level: 日志级别； maxsize文件最大值                |
 
 
